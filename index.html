@@ -557,17 +557,25 @@
     </div>
 </body>
 <script>
-       window.onload = function (){
+      window.onload = function (){
          const $Button1 = document.getElementById('one');
          const $Button2 = document.getElementById('two');
          const $Background = document.getElementById('beforeFooter');
           
          function firstClick(){
-            $Background.style.backgroundImage = "url('./ThirdSecond.jpeg')";
+            $Background.style.backgroundImage = "url('https://kunal1309.github.io/ct-assignment/ThirdSecond.jpeg')";
+            $Button2.style.backgroundColor = "burlywood";
+            $Button1.style.backgroundColor = "rgb(48, 48, 93)";
+            $Button2.style.textDecorationLine = "underline";
+            $Button1.style.textDecorationLine = "none";
          }
 
          function secondClick(){
-            $Background.style.backgroundImage = "url('./ThirdOne.jpeg')";
+            $Background.style.backgroundImage = "url('https://kunal1309.github.io/ct-assignment/ThirdOne.jpeg')";
+            $Button1.style.backgroundColor = "burlywood";
+            $Button2.style.backgroundColor = "rgb(48, 48, 93)";
+            $Button1.style.textDecorationLine = "underline";
+            $Button2.style.textDecorationLine = "none";
          }
 
          $Button2.addEventListener("click", firstClick);
