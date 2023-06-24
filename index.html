@@ -330,9 +330,15 @@
             height: 600px;
         }
 
-        #corosoul {
-            height: 100px;
-        }
+       #corosoul {
+        position: absolute;
+        bottom: 0%;
+        width: 80vw;
+        height: 180px;
+        padding: 0% 10%;
+        background: rgb(49, 48, 48, 0.4);
+        overflow: hidden;
+    }
 
         #middleNum {
             left: 5%;
@@ -469,6 +475,37 @@
         }
     }
 
+    
+    #slider {
+        margin-left: 12%;
+        width: 85%;
+        display: inline-flex;
+        overflow: auto;
+    }
+
+    #slider img {
+        margin: 1%;
+        width: 40%;
+        height: 150px;
+        transition: 0.7s;
+    }
+
+    .indicators {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+
+    .indicators span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
 </style>
 <body>
     <div id="Head">
@@ -502,7 +539,27 @@
             suscipit eu sapien id condimentum. In quis euismod purus. Suspendisse
             viverra aliquet massa eget tincidunt.
         </p>
-        <img id="corosoul" src="./corosoul.jpeg" />
+        <div id="corosoul">
+            <div id="slider">
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+                    <img src="./car1.jpg" />
+                    <img src="./car2.jpeg" />
+            </div>
+            <div class="indicators">
+                <span id="btn1"><a href="#imgOne"></a></span>
+                <span id="btn2"><a href="#imgTwo"></a></span>
+                <span id="btn3"><a href="#imgThree"></a></span>
+            </div>
+        </div>
     </div>
 
     <div id="middleNext">
